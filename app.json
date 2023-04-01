@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "sb-travel",
-    "slug": "sb-travel",
+    "slug": "betraveled",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBAvDy55Oz9_AibZAXd_t9bMi22qZZ9HmM"
+        }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBAvDy55Oz9_AibZAXd_t9bMi22qZZ9HmM"
+          }
+        }
+
+      
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "115fa680-9e82-4fa0-b641-df62318f3d4a"
+      }
+    },
+    "owner": "lineky"
   }
 }
